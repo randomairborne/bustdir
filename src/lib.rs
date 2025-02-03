@@ -2,6 +2,8 @@
 pub mod askama;
 #[cfg(feature = "tera")]
 pub mod tera;
+#[cfg(feature = "rinja")]
+pub mod rinja;
 
 use std::{fmt::Formatter, path::Path};
 
