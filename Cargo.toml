@@ -1,7 +1,7 @@
 [package]
 name = "bustdir"
-version = "0.1.2"
-edition = "2021"
+version = "0.2.0"
+edition = "2024"
 description = "Read a directory and generate cache-busting hashes for it"
 keywords = ["cache-busting", "cache"]
 categories = ["web-programming", "caching"]
@@ -13,12 +13,10 @@ license = "Apache-2.0 OR MIT"
 default = []
 askama = ["dep:askama", "get_or_random"]
 tera = ["dep:tera", "get_or_random"]
-rinja = ["dep:rinja", "get_or_random"]
 get_or_random = ["dep:rand"]
 
 [dependencies]
-askama = { version = "0.12", default-features = false, optional = true }
-rinja = { version = "0.3", default-features = false, optional = true }
+askama = { version = "0.13", default-features = false, optional = true }
 tera = { version = "1", default-features = false, optional = true }
 blake3 = { version = "1", features = ["neon"] }
 rand = { version = "0.8", optional = true }
