@@ -1,6 +1,6 @@
 [package]
 name = "bustdir"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 description = "Read a directory and generate cache-busting hashes for it"
 keywords = ["cache-busting", "cache"]
@@ -16,7 +16,7 @@ tera = ["dep:tera", "get_or_random"]
 get_or_random = ["dep:rand"]
 
 [dependencies]
-askama = { version = "0.13", default-features = false, optional = true }
+askama = { version = "0.14", default-features = false, optional = true }
 tera = { version = "1", default-features = false, optional = true }
 blake3 = { version = "1", features = ["neon"] }
 rand = { version = "0.8", optional = true }
